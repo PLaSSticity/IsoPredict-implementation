@@ -1,0 +1,8 @@
+WRITE KEY[x] Txn(0, 0)
+WRITE KEY[y] Txn(0, 0)
+WRITE KEY[y] Txn(1, 0)
+READ KEY[x] Txn(1, 0) From(0, 0)
+WRITE KEY[x] Txn(2, 0)
+READ KEY[y] Txn(2, 0) From(0, 0)
+
+
